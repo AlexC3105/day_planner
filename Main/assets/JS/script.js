@@ -30,8 +30,8 @@ $(function () {
     $('.saveBtn').on('click', function () {
         var userData = $(this).siblings('.description').val();
         var timeBlock = $(this).parent().attr('id').split('-')[1];
-        console.log(userData, timeBlock);
-        localStorage.setItem(userData, timeBlock);
+        console.log(timeBlock, userData);
+        localStorage.setItem(timeBlock, userData);
     });
 
     for (let i = 5; i <= 12; i++) {
@@ -48,10 +48,10 @@ $(function () {
     }
 });
 
-$('.saveBtn').on('click', function () {
-    var userData = $(this).siblings('.description').val();
-    var timeBlock = $(this).parent().attr('id').split('-')[1];
-    console.log(userData, timeBlock);
-    localStorage.setItem(userData, timeBlock);
-});
+// $('.saveBtn').on('click', function () {
+//    var userData = $(this).siblings('.description').val();
+//    var timeBlock = $(this).parent().attr('id').split('-')[1];
+//    console.log(userData, timeBlock);
+//    localStorage.setItem(userData, timeBlock);
+//});
 
