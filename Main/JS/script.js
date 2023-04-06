@@ -26,7 +26,7 @@ var currentHour = dayjs().hour();
 console.log(currentHour);
 
 $(function () {
-    $('#currentDay').text('It is: ' + dayjs().format('ddd, MMM D, YYYY h:mm A'));
+    $('#currentDay').text('Today is: ' + dayjs().format('ddd, MMM D, YYYY h:mm A'));
     $('.saveBtn').on('click', function () {
         var userData = $(this).siblings('.description').val();
         var timeBlock = $(this).parent().attr('id').split('-')[1];
