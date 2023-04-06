@@ -55,7 +55,3 @@ $('.saveBtn').on('click', function () {
     localStorage.setItem(userData, timeBlock);
 });
 
-$('.printBtn').click(function () {
-    window.print();
-    alert('Please Work.');
-});
