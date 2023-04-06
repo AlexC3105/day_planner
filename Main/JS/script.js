@@ -34,7 +34,7 @@ $(function () {
         localStorage.setItem(userData, timeBlock);
     });
 
-    for (let i = 6; i <= 19; i++) {
+    for (let i = 5; i <= 12; i++) {
         var storedValue = localStorage.getItem(i);
         $('#hour-' + i).children('.description').val(storedValue);
         if (i === currentHour) {
@@ -53,4 +53,9 @@ $('.saveBtn').on('click', function () {
     var timeBlock = $(this).parent().attr('id').split('-')[1];
     console.log(userData, timeBlock);
     localStorage.setItem(userData, timeBlock);
+});
+
+$('.printBtn').click(function () {
+    window.print();
+    alert('Please Work.');
 });
